@@ -115,6 +115,8 @@ Test live applications for vulnerabilities:
 Ensure secure deployment practices:
 - **[Trivy](https://github.com/aquasecurity/trivy)**: Vulnerability scanning for containers. 🐳
 - **[Terrascan](https://github.com/accurics/terrascan)**: Static analysis for IaC. 📏
+- **[StackStorm](https://github.com/StackStorm/st2)**: Event-driven automation platform that integrates with DevSecOps workflows to automate repetitive tasks and enhance security compliance. ⚡
+
 
 ### 🌀 Kubernetes Security
 Secure Kubernetes clusters and workloads:
