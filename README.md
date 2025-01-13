@@ -1,63 +1,105 @@
-# DevSecOps Arsenal ⚙️
+# 🌟 DevSecOps Arsenal 🌟
 
-A curated hub of DevSecOps tools to secure CI/CD workflows and more.
-
-## Table of Contents 📚
-1. [Planning & Design 📝](#planning--design)
-2. [Development 💻](#development)
-3. [Build & Integration 🏗️](#build--integration)
-4. [Testing & Validation 🧪](#testing--validation)
-5. [Deployment 🚀](#deployment)
-6. [Monitoring & Feedback 📊](#monitoring--feedback)
-7. [Contribution Rules 📜](#contribution-rules)
+Welcome to the **DevSecOps Arsenal** — a comprehensive, curated collection of tools, methodologies, and resources to seamlessly integrate security into every stage of your SDLC and DevOps workflows.
 
 ---
 
-## Planning & Design 📝
-
-- **[Mindmap](https://github.com/Ignitetechnologies/Mindmap)**: A tool for visualizing cloud infrastructure and design architectures, helping plan secure infrastructures.
-
-## Development 💻
-
-- **[SonarLint](https://github.com/SonarSource/sonarlint-core)**: 🕵️‍♂️ An IDE plugin for real-time code analysis to detect bugs, vulnerabilities, and code quality issues during development.
-- **[Bandit](https://github.com/PyCQA/bandit)**: 🐍 A security linter for Python to detect common security issues early in the development process.
-- **[Gitleaks](https://github.com/gitleaks/gitleaks)**: 🔑 A tool for detecting hardcoded secrets in source code repositories, ensuring secure code practices.
-- **[Awesome Security](https://github.com/sbilly/awesome-security)**: 🛡️ A curated list of security tools and resources for developers to enhance their security posture.
-- **[Awesome Tunneling](https://github.com/anderspitman/awesome-tunneling)**: 🌐 A collection of tunneling tools to facilitate secure development in isolated environments.
-
-## Build & Integration 🏗️
-
-- **[Checkov](https://github.com/bridgecrewio/checkov)**: 🔍 A static code analysis tool for Infrastructure-as-Code to ensure security and compliance during the build process.
-- **[tfsec](https://github.com/aquasecurity/tfsec)**: 🔒 A security scanner for Terraform code that helps identify vulnerabilities in cloud infrastructure code.
-- **[Infracost](https://github.com/infracost/infracost)**: 💰 A tool for tracking cloud infrastructure costs, ensuring cost-effective builds during CI/CD pipelines.
-- **[Terrascan](https://github.com/accurics/terrascan)**: 🚨 A static code analyzer for Infrastructure-as-Code, helping to detect security and compliance risks early.
-
-## Testing & Validation 🧪
-
-- **[Lynis](https://github.com/CISOfy/lynis)**: 🖥️ A security auditing tool for Unix-based systems to validate security configurations and best practices.
-- **[Fail2Ban](https://github.com/fail2ban/fail2ban)**: 🚫 A tool to protect against brute-force attacks, ensuring secure testing of system resilience.
-- **[OWASP ZAP](https://github.com/zaproxy/zaproxy)**: 🛠️ An open-source web application security scanner to test and validate web applications for security vulnerabilities.
-- **[GoPhish](https://github.com/gophish/gophish)**: 🎣 A phishing framework for testing social engineering and user awareness during validation.
-- **[Semgrep](https://github.com/semgrep/semgrep)**: 🧰 A static analysis tool for detecting bugs, vulnerabilities, and code quality issues across many languages.
-
-## Deployment 🚀
-
-- **[Clair](https://github.com/quay/clair)**: 🐳 A vulnerability scanner for container images, ensuring security before deployment.
-- **[Grype](https://github.com/anchore/grype)**: 🔍 A container vulnerability scanner to ensure secure image deployment in cloud environments.
-- **[Nginx Proxy Manager](https://github.com/NginxProxyManager/nginx-proxy-manager)**: 🌐 A tool to manage and secure NGINX proxies during deployment.
-- **[CloudGoat](https://github.com/RhinoSecurityLabs/cloudgoat)**: ☁️ A tool for simulating cloud security challenges, useful for validating security risks in deployment stages.
-
-## Monitoring & Feedback 📊
-
-- **[DetectionLab](https://github.com/clong/DetectionLab)**: 🕵️‍♂️ A framework to build and test detection capabilities, providing feedback on security and incident response.
-- **[Prowler](https://github.com/prowler-cloud/prowler)**: 🛡️ A security tool for AWS to ensure that security best practices are followed post-deployment.
-- **[SonarLint](https://github.com/SonarSource/sonarlint-core)**: 🕵️‍♂️ Continuously monitor code for vulnerabilities and performance issues after deployment.
-- **[Checkov](https://github.com/bridgecrewio/checkov)**: 🔍 Provides continuous scanning of infrastructure-as-code to prevent security misconfigurations after deployment.
+## 📜 Table of Contents
+1. [What is DevSecOps? 🤔](#what-is-devsecops)
+2. [Tooling 🛠️](#tooling)
+   - [Pre-Commit Time Tools ⚡](#pre-commit-time-tools)
+   - [Secrets Management 🔒](#secrets-management)
+   - [OSS and Dependency Management 📦](#oss-and-dependency-management)
+   - [Supply Chain Security 🔗](#supply-chain-security)
+   - [SAST (Static Application Security Testing) 🛡️](#sast-static-application-security-testing)
+   - [DAST (Dynamic Application Security Testing) 🌐](#dast-dynamic-application-security-testing)
+   - [Continuous Deployment Security 🚀](#continuous-deployment-security)
+   - [Kubernetes Security 🌀](#kubernetes-security)
+   - [Infrastructure as Code Security 🏗️](#infrastructure-as-code-security)
+3. [Methodologies, Whitepapers, and Architecture 📚](#methodologies-whitepapers-and-architecture)
+4. [Contribution Rules 🤝](#contribution-rules)
 
 ---
 
-## Contribution Rules 📜
+## 🤔 What is DevSecOps?
 
-- Fork the repository and create a branch for your changes.
-- Submit a pull request with a clear description of the changes and the category of tools.
-- Ensure the tools you add are open-source and relevant to the DevSecOps SSDLC methodology.
+**DevSecOps** ensures security is integrated at every phase of the DevOps lifecycle—planning, coding, building, testing, releasing, deploying, operating, and monitoring. It emphasizes automation, collaboration, and enforcement to bridge development, security, and operations. Learn more:
+- [RedHat DevSecOps](https://www.redhat.com/en/topics/devops/what-is-devsecops)
+- [IBM DevSecOps](https://www.ibm.com/cloud/learn/devsecops)
+
+---
+
+## 🛠️ Tooling
+
+### ⚡ Pre-Commit Time Tools
+These tools streamline development by addressing issues before they reach your repository:
+- **[Git-Secrets](https://github.com/awslabs/git-secrets)**: Detects secrets in commits. 🔑
+- **[SonarLint](https://github.com/SonarSource/sonarlint-core)**: IDE-based code quality scanner. 🕵️‍♂️
+- **[ThreatSpec](https://github.com/threatspec/threatspec)**: Threat modeling as code. ⚔️
+
+### 🔒 Secrets Management
+Ensure sensitive information like API keys are secure:
+- **[TruffleHog](https://github.com/trufflesecurity/truffleHog)**: Detects secrets in source code. 🐷
+- **[HashiCorp Vault](https://github.com/hashicorp/vault)**: Centralized secrets storage. 🗄️
+- **[Mozilla SOPS](https://github.com/mozilla/sops)**: Secrets management for YAML and JSON. 📜
+
+### 📦 OSS and Dependency Management
+Monitor vulnerabilities in open-source dependencies:
+- **[Snyk](https://github.com/snyk/snyk)**: Scan projects for vulnerabilities. 🛡️
+- **[CycloneDX](https://github.com/CycloneDX)**: Generate software BOMs (Bill of Materials). 📄
+
+### 🔗 Supply Chain Security
+Protect the integrity of your CI/CD pipelines:
+- **[Tekton Chains](https://github.com/tektoncd/chains)**: Kubernetes-native supply chain security. ⚙️
+- **[SLSA Framework](https://github.com/slsa-framework/slsa)**: Supply-chain security standards. 🛠️
+
+### 🛡️ SAST (Static Application Security Testing)
+Scan source code for vulnerabilities:
+- **[Semgrep](https://github.com/returntocorp/semgrep)**: High-quality static analysis. 🧰
+- **[Bandit](https://github.com/PyCQA/bandit)**: Python security linter. 🐍
+
+### 🌐 DAST (Dynamic Application Security Testing)
+Test live applications for vulnerabilities:
+- **[OWASP ZAP](https://github.com/zaproxy/zaproxy)**: Comprehensive web app scanner. 🌐
+- **[Nuclei](https://github.com/projectdiscovery/nuclei)**: Template-based scanning. 🔎
+
+### 🚀 Continuous Deployment Security
+Ensure secure deployment practices:
+- **[Trivy](https://github.com/aquasecurity/trivy)**: Vulnerability scanning for containers. 🐳
+- **[Terrascan](https://github.com/accurics/terrascan)**: Static analysis for IaC. 📏
+
+### 🌀 Kubernetes Security
+Secure Kubernetes clusters and workloads:
+- **[Kubescape](https://github.com/armosec/kubescape)**: NSA and MITRE ATT&CK compliance. 🎯
+- **[Kube-Bench](https://github.com/aquasecurity/kube-bench)**: CIS benchmarking for Kubernetes. 📊
+
+### 🏗️ Infrastructure as Code Security
+Shift security left by scanning IaC templates:
+- **[Checkov](https://github.com/bridgecrewio/checkov)**: Detect misconfigurations in Terraform, CloudFormation, and more. 🔍
+- **[KICS](https://github.com/Checkmarx/kics)**: Scans infrastructure-as-code for vulnerabilities. 📂
+
+---
+
+## 📚 Methodologies, Whitepapers, and Architecture
+Enhance your understanding of DevSecOps with these resources:
+- [Principles of Chaos Engineering](https://principlesofchaos.org/)
+- [OWASP DevSecOps Guidelines](https://owasp.org/)
+
+---
+
+## 🤝 Contribution Rules
+
+Contributions are welcome! Follow these rules:
+- Add **only active and open-source** tools. ✅
+- Ensure your submission aligns with the **DevSecOps methodology**. 🛠️
+- Provide a clear description, including the tool's **maturity** and relevance. ✍️
+- Avoid duplicates! Check if the tool is already listed. 🔍
+
+### How to Contribute:
+1. **Fork** the repository. 🍴
+2. Create a new **branch**. 🌿
+3. Submit a **Pull Request (PR)** with details. 📨
+
+---
+
+🌟 *Let's build a safer DevSecOps ecosystem together!* 🌟
