@@ -1,4 +1,3 @@
-```markdown
 # ⚙️ DevSecOps Arsenal ⚙️
 
 Welcome to the **DevSecOps Arsenal** — a comprehensive, curated collection of tools, methodologies, and resources to seamlessly integrate security into every stage of your SDLC and DevOps workflows.
@@ -88,4 +87,3 @@ Welcome to the **DevSecOps Arsenal** — a comprehensive, curated collection of 
 | **Clear Description**                 | Provide clear details about the tool's use case and relevance.                             |
 
 🌟 *Let's build a safer DevSecOps ecosystem together!* 🌟
-```
