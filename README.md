@@ -1,6 +1,6 @@
 # ⚙️ DevSecOps Arsenal ⚙️
 
-Welcome to the **DevSecOps Arsenal** — a comprehensive, curated collection of tools, methodologies, and resources to seamlessly integrate security into every stage of your SDLC and DevOps workflows.
+## Welcome to the **DevSecOps Arsenal** — a comprehensive, curated collection of tools, methodologies, and resources to seamlessly integrate security into every stage of your SDLC and DevOps workflows.
 
 ---
 
@@ -45,8 +45,6 @@ The **SDLC** is a framework that defines the processes and phases involved in so
 
 ### How They Work Together
 The SSDLC augments the SDLC by embedding security checks at every stage. This alignment ensures that security becomes a fundamental part of the development process rather than an afterthought, fostering secure and high-quality software.
-
----
 
 ---
 
