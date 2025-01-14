@@ -98,6 +98,7 @@ This article focuses on enabling organizations to implement Shift-Left principle
 | **IaC Security 🏗️**              | **[Checkov](https://github.com/bridgecrewio/checkov)**: Finds misconfigurations in IaC templates.                        |
 |                                  | **[KICS](https://github.com/Checkmarx/kics)**: Scans IaC files for vulnerabilities.                                      |
 | **Vulnerability Management**    | **[DefectDojo](https://github.com/DefectDojo/django-DefectDojo)**: Platform for centralized vulnerability management.     |
+|                                 | **[ArcherySec](https://github.com/archerysec/archerysec)**: ASOC, ASPM, DevSecOps, Vulnerability Management Using ArcherySec.|
 
 ---
 
