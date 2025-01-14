@@ -22,6 +22,7 @@
 **DevSecOps** ensures security is integrated at every phase of the DevOps lifecycle—planning, coding, building, testing, releasing, deploying, operating, and monitoring. It emphasizes automation, collaboration, and enforcement to bridge development, security, and operations. Learn more:
 - [RedHat DevSecOps](https://www.redhat.com/en/topics/devops/what-is-devsecops)
 - [IBM DevSecOps](https://www.ibm.com/cloud/learn/devsecops)
+- [Standard DevSecOps Platform Framework](https://tech.gsa.gov/guides/dev_sec_ops_guide/)
 
 ---
 
