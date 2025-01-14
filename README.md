@@ -17,19 +17,39 @@ Welcome to the **DevSecOps Arsenal** — a comprehensive, curated collection of 
 
 ---
 
+## 🤔 What is DevSecOps?
+
+**DevSecOps** ensures security is integrated at every phase of the DevOps lifecycle—planning, coding, building, testing, releasing, deploying, operating, and monitoring. It emphasizes automation, collaboration, and enforcement to bridge development, security, and operations.
+
+| Learn More |                                                                                          |
+|------------|------------------------------------------------------------------------------------------|
+| [RedHat DevSecOps](https://www.redhat.com/en/topics/devops/what-is-devsecops)                         |
+| [IBM DevSecOps](https://www.ibm.com/cloud/learn/devsecops)                                            |
+
+---
+
+## 🔍 What is SDLC and SSDLC?
+
+| Term                  | Description                                                                                             |
+|-----------------------|---------------------------------------------------------------------------------------------------------|
+| **SDLC**              | A framework defining software development phases like Planning, Design, Development, Testing, and Deployment. |
+| **SSDLC**             | Security-enhanced SDLC embedding practices like Threat Modeling and Static Analysis at every stage.     |
+| **How They Work Together** | Align SDLC with SSDLC to embed security as a fundamental part of the development process.            |
+
+---
+
 ## 🔄 Shift-Left SSDLC
 
-### Concept
-**Shift-Left SSDLC** refers to integrating security and quality assurance earlier in the software development process—shifting activities typically done later, such as testing and security checks, to earlier phases like planning and coding.
+**Shift-Left SSDLC** refers to integrating security and quality assurance earlier in the software development lifecycle.
 
-### Significance
-By addressing issues earlier:
-- **Cost savings**: Fixing vulnerabilities in the design phase is cheaper than post-deployment.
-- **Improved software quality**: Early detection enhances the overall reliability and security of the software.
-- **Faster delivery**: Reduced rework shortens development cycles.
+### Benefits
+- **Cost savings**: Address vulnerabilities early.
+- **Improved quality**: Enhance reliability and security.
+- **Faster delivery**: Reduce rework and shorten cycles.
 
-### Recommended Reading
-- **[Shift-Left SSDLC](https://github.com/sk3pp3r/shift-left)**: A detailed article offering insights and best practices for adopting the Shift-Left methodology.
+| Recommended Reading |                                                                                     |
+|---------------------|-------------------------------------------------------------------------------------|
+| [Shift-Left SSDLC](https://github.com/sk3pp3r/shift-left): Insights and best practices for adopting the methodology.|
 
 ---
 
@@ -37,53 +57,52 @@ By addressing issues earlier:
 
 | Category                         | Tool Name & Description                                                                                                   |
 |----------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| **Pre-Commit Time Tools ⚡**     | **[Git-Secrets](https://github.com/awslabs/git-secrets)**: Detects secrets in commits to prevent sensitive data exposure. |
-|                                  | **[SonarLint](https://github.com/SonarSource/sonarlint-core)**: IDE-based tool for real-time code quality and bug detection. |
-|                                  | **[ThreatSpec](https://github.com/threatspec/threatspec)**: Enables threat modeling as code for early risk identification. |
-| **Secrets Management 🔒**        | **[TruffleHog](https://github.com/trufflesecurity/truffleHog)**: Scans for secrets in code repositories.                  |
-|                                  | **[HashiCorp Vault](https://github.com/hashicorp/vault)**: Provides secure storage and access to sensitive information.   |
-|                                  | **[Mozilla SOPS](https://github.com/mozilla/sops)**: Encrypts and manages secrets within YAML and JSON files.            |
-| **OSS Dependency Management 📦**| **[Snyk](https://github.com/snyk/snyk)**: Monitors and fixes vulnerabilities in open-source dependencies.                |
-|                                  | **[CycloneDX](https://github.com/CycloneDX)**: Generates software BOMs (Bill of Materials) for dependency tracking.       |
+| **Pre-Commit Time Tools ⚡**     | **[Git-Secrets](https://github.com/awslabs/git-secrets)**: Detects secrets in commits.                                    |
+|                                  | **[SonarLint](https://github.com/SonarSource/sonarlint-core)**: IDE-based tool for real-time code quality checks.        |
+|                                  | **[ThreatSpec](https://github.com/threatspec/threatspec)**: Threat modeling as code for early risk identification.        |
+| **Secrets Management 🔒**        | **[TruffleHog](https://github.com/trufflesecurity/truffleHog)**: Scans repositories for secrets.                         |
+|                                  | **[HashiCorp Vault](https://github.com/hashicorp/vault)**: Provides secure access and storage for secrets.               |
+|                                  | **[Mozilla SOPS](https://github.com/mozilla/sops)**: Encrypts secrets in YAML and JSON files.                            |
+| **OSS Dependency Management 📦**| **[Snyk](https://github.com/snyk/snyk)**: Identifies and fixes vulnerabilities in dependencies.                          |
+|                                  | **[CycloneDX](https://github.com/CycloneDX)**: Creates software BOMs (Bill of Materials) for tracking dependencies.       |
 | **Supply Chain Security 🔗**     | **[Tekton Chains](https://github.com/tektoncd/chains)**: Provides Kubernetes-native supply chain security.               |
-|                                  | **[SLSA Framework](https://github.com/slsa-framework/slsa)**: Offers standards for supply-chain integrity and security.   |
-| **SAST 🛡️**                      | **[Semgrep](https://github.com/returntocorp/semgrep)**: Lightweight static analysis tool for vulnerability detection.     |
-|                                  | **[Bandit](https://github.com/PyCQA/bandit)**: Security-focused linter for Python projects.                               |
-| **DAST 🌐**                      | **[OWASP ZAP](https://github.com/zaproxy/zaproxy)**: Comprehensive dynamic application scanner for web vulnerabilities.  |
-|                                  | **[Nuclei](https://github.com/projectdiscovery/nuclei)**: Template-based scanner for vulnerability assessment.            |
-| **Continuous Deployment Security 🚀** | **[Trivy](https://github.com/aquasecurity/trivy)**: Scans containers for vulnerabilities, misconfigurations, and more. |
-|                                  | **[Terrascan](https://github.com/accurics/terrascan)**: Performs static analysis on Infrastructure as Code templates.    |
-|                                  | **[StackStorm](https://github.com/StackStorm/st2)**: Automates DevSecOps tasks to enhance compliance and security.        |
-| **Kubernetes Security 🌀**       | **[Kubescape](https://github.com/armosec/kubescape)**: Scans Kubernetes configurations for compliance and best practices. |
-|                                  | **[Kube-Bench](https://github.com/aquasecurity/kube-bench)**: Validates Kubernetes clusters against CIS benchmarks.       |
-| **IaC Security 🏗️**              | **[Checkov](https://github.com/bridgecrewio/checkov)**: Detects security misconfigurations in Terraform, CloudFormation, etc. |
-|                                  | **[KICS](https://github.com/Checkmarx/kics)**: Scans Infrastructure as Code files for vulnerabilities.                   |
-| **Vulnerability Management**    | **[DefectDojo](https://github.com/DefectDojo/django-DefectDojo)**: Centralized vulnerability management platform.          |
+|                                  | **[SLSA Framework](https://github.com/slsa-framework/slsa)**: Offers standards for supply-chain security.                |
+| **SAST 🛡️**                      | **[Semgrep](https://github.com/returntocorp/semgrep)**: High-quality static analysis.                                    |
+|                                  | **[Bandit](https://github.com/PyCQA/bandit)**: Python-specific security linter.                                          |
+| **DAST 🌐**                      | **[OWASP ZAP](https://github.com/zaproxy/zaproxy)**: Dynamic scanner for web vulnerabilities.                           |
+|                                  | **[Nuclei](https://github.com/projectdiscovery/nuclei)**: Template-based vulnerability scanning.                         |
+| **Continuous Deployment 🚀**     | **[Trivy](https://github.com/aquasecurity/trivy)**: Scans containers and configurations for vulnerabilities.            |
+|                                  | **[Terrascan](https://github.com/accurics/terrascan)**: Static analysis for Infrastructure as Code.                     |
+|                                  | **[StackStorm](https://github.com/StackStorm/st2)**: Automation platform for DevSecOps workflows.                        |
+| **Kubernetes Security 🌀**       | **[Kubescape](https://github.com/armosec/kubescape)**: Kubernetes compliance and hardening scanner.                      |
+|                                  | **[Kube-Bench](https://github.com/aquasecurity/kube-bench)**: Benchmarks Kubernetes clusters against CIS standards.       |
+| **IaC Security 🏗️**              | **[Checkov](https://github.com/bridgecrewio/checkov)**: Finds misconfigurations in IaC templates.                        |
+|                                  | **[KICS](https://github.com/Checkmarx/kics)**: Scans IaC files for vulnerabilities.                                      |
+| **Vulnerability Management**    | **[DefectDojo](https://github.com/DefectDojo/django-DefectDojo)**: Platform for centralized vulnerability management.     |
 
 ---
 
 ## 📚 Methodologies, Whitepapers, and Architecture
 
-Enhance your understanding of DevSecOps with these resources:
-- [Principles of Chaos Engineering](https://principlesofchaos.org/)
-- [OWASP DevSecOps Guidelines](https://owasp.org/)
+| Resource                         | Description                                                                                  |
+|----------------------------------|----------------------------------------------------------------------------------------------|
+| [Principles of Chaos Engineering](https://principlesofchaos.org/) | Guidelines to build resilient systems.                                                      |
+| [OWASP DevSecOps Guidelines](https://owasp.org/)                 | Comprehensive DevSecOps best practices.                                                     |
 
 ---
 
 ## 🤝 Contribution Rules
 
-Contributions are welcome! Follow these rules:
+1. **Active, Open Source**: Add tools that are currently active and open-source.
+2. **Relevance**: Ensure submissions align with the **DevSecOps methodology**.
+3. **Avoid Duplication**: Check existing tools before adding new ones.
+4. **Provide Details**: Include clear descriptions and tool relevance.
 
-1. Add **only active and open-source** tools.
-2. Ensure your submission aligns with the **DevSecOps methodology**.
-3. Provide a clear description, including the tool's **maturity** and relevance.
-4. Avoid duplicates! Check if the tool is already listed.
-
-### How to Contribute:
+### How to Contribute
 1. **Fork** the repository.
 2. Create a new **branch**.
-3. Submit a **Pull Request (PR)** with details.
+3. Submit a **Pull Request**.
 
 ---
 
-🌟 *Let's build a safer DevSecOps ecosystem together!* 🌟
+🌟 *Let’s build a safer DevSecOps ecosystem together!* 🌟
