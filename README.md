@@ -1,6 +1,7 @@
 # ⚙️ DevSecOps Arsenal ⚙️
 
 ## Welcome to the **DevSecOps Arsenal** — a comprehensive, curated collection of tools, methodologies, and resources to seamlessly integrate security into every stage of your SDLC and DevOps workflows.
+![DevSecOps_HaimCohen](https://github.com/user-attachments/assets/874410e3-d3a1-435b-a26d-33196a23577a)
 
 ---
 
