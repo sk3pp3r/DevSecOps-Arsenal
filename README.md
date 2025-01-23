@@ -68,7 +68,7 @@ By addressing issues earlier:
 4. **Collaborative Development**: Foster teamwork between developers, QA, and security teams.
 5. **Continuous Feedback Loops**: Use CI/CD pipelines to automate testing and provide feedback.
 
-### Recommended Reading: **[Shift-Left SSDLC](https://github.com/sk3pp3r/shift-left)**
+### Recommended Reading 📖: **[Shift-Left SSDLC](https://github.com/sk3pp3r/shift-left)**
 This article focuses on enabling organizations to implement Shift-Left principles effectively by providing integrations and best practices for embedding security and QA into the earliest stages of development. 🌟
 
 ---
