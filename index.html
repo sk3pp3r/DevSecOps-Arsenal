@@ -6,6 +6,7 @@
     <title>DevSecOps Arsenal</title>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {
             --primary-color: #00ff9d;
@@ -24,6 +25,69 @@
             padding: 0;
             background-color: var(--background-color);
             color: var(--text-color);
+        }
+
+        .header {
+            background-color: var(--card-background);
+            padding: 1rem 0;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid var(--primary-color);
+            box-shadow: 0 4px 20px rgba(0, 255, 157, 0.1);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .creator-info {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .creator-info img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 2px solid var(--primary-color);
+        }
+
+        .creator-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .creator-links a {
+            color: var(--text-color);
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+
+        .creator-links a:hover {
+            color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+
+        .source-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-color);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .source-link:hover {
+            color: var(--primary-color);
+        }
+
+        .source-link i {
+            font-size: 1.2rem;
         }
 
         .container {
@@ -169,6 +233,32 @@
     </style>
 </head>
 <body>
+    <header class="header">
+        <div class="header-content">
+            <div class="creator-info">
+                <img src="https://avatars.githubusercontent.com/sk3pp3r" alt="Haim Cohen">
+                <div>
+                    <h3 style="margin: 0; color: var(--heading-color);">Haim Cohen</h3>
+                    <p style="margin: 0; font-size: 0.9rem;">Creator of DevSecOps Arsenal</p>
+                </div>
+            </div>
+            <div class="creator-links">
+                <a href="https://sk3pp3r.github.io/" title="Personal Website" target="_blank">
+                    <i class="fas fa-globe"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/haimc/" title="LinkedIn" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/sk3pp3r" title="GitHub" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <a href="https://github.com/sk3pp3r/DevSecOps-Arsenal" class="source-link" target="_blank">
+                <i class="fab fa-github"></i>
+                Source Repository
+            </a>
+        </div>
+    </header>
     <div class="container">
         <div class="markdown-body" id="content"></div>
     </div>
