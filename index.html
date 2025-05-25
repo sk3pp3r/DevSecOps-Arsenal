@@ -5,57 +5,173 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevSecOps Arsenal</title>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --primary-color: #00ff9d;
+            --secondary-color: #0a192f;
+            --text-color: #8892b0;
+            --heading-color: #ccd6f6;
+            --background-color: #0a192f;
+            --card-background: #112240;
+            --border-color: #1d2d50;
+        }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
             line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 2rem;
-            color: #24292e;
         }
+
         .markdown-body {
             box-sizing: border-box;
             min-width: 200px;
             max-width: 980px;
             margin: 0 auto;
             padding: 45px;
+            background-color: var(--card-background);
+            border-radius: 10px;
+            box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
         }
+
         @media (max-width: 767px) {
             .markdown-body {
                 padding: 15px;
             }
         }
+
+        /* Headings */
+        h1, h2, h3, h4, h5, h6 {
+            color: var(--heading-color);
+            font-family: 'JetBrains Mono', monospace;
+            margin-top: 24px;
+            margin-bottom: 16px;
+            font-weight: 600;
+            line-height: 1.25;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.3em;
+        }
+
+        /* Tables */
         table {
             border-collapse: collapse;
             width: 100%;
             margin: 1em 0;
+            background-color: var(--card-background);
+            border-radius: 8px;
+            overflow: hidden;
         }
+
         th, td {
-            border: 1px solid #dfe2e5;
-            padding: 6px 13px;
+            border: 1px solid var(--border-color);
+            padding: 12px 15px;
+            text-align: left;
         }
+
         th {
-            background-color: #f6f8fa;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            font-family: 'JetBrains Mono', monospace;
         }
+
         tr:nth-child(even) {
-            background-color: #f6f8fa;
+            background-color: rgba(17, 34, 64, 0.5);
         }
+
+        tr:hover {
+            background-color: rgba(0, 255, 157, 0.1);
+        }
+
+        /* Links */
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            color: #fff;
+            text-decoration: none;
+            text-shadow: 0 0 8px var(--primary-color);
+        }
+
+        /* Code blocks */
+        pre {
+            background-color: var(--secondary-color);
+            border-radius: 6px;
+            padding: 16px;
+            overflow: auto;
+        }
+
+        code {
+            font-family: 'JetBrains Mono', monospace;
+            background-color: var(--secondary-color);
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+        }
+
+        /* Images */
         img {
             max-width: 100%;
             height: auto;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
         }
-        a {
-            color: #0366d6;
-            text-decoration: none;
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
         }
-        a:hover {
-            text-decoration: underline;
+
+        ::-webkit-scrollbar-track {
+            background: var(--secondary-color);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary-color);
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #00cc7d;
+        }
+
+        /* Animations */
+        @keyframes glow {
+            0% { box-shadow: 0 0 5px var(--primary-color); }
+            50% { box-shadow: 0 0 20px var(--primary-color); }
+            100% { box-shadow: 0 0 5px var(--primary-color); }
+        }
+
+        .markdown-body {
+            animation: glow 3s infinite;
+        }
+
+        /* GitHub Stars badges */
+        img[src*="img.shields.io"] {
+            box-shadow: none;
+            vertical-align: middle;
         }
     </style>
 </head>
 <body>
-    <div class="markdown-body" id="content"></div>
+    <div class="container">
+        <div class="markdown-body" id="content"></div>
+    </div>
     <script>
         fetch('README.md')
             .then(response => response.text())
