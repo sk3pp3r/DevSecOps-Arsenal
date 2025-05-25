@@ -76,32 +76,51 @@ This article focuses on enabling organizations to implement Shift-Left principle
 
 ## 🛠️ Tooling
 
-| Category                         | Tool Name & Description                                                                                                   |
-|----------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| **Pre-Commit Time Tools ⚡**     | **[Git-Secrets](https://github.com/awslabs/git-secrets)**: Detects secrets in commits.                                    |
-|                                  | **[SonarLint](https://github.com/SonarSource/sonarlint-core)**: IDE-based tool for real-time code quality checks.        |
-|                                  | **[ThreatSpec](https://github.com/threatspec/threatspec)**: Threat modeling as code for early risk identification.        |
-|                                  | **[Gitleaks](https://github.com/gitleaks/gitleaks)**: Detect and prevent hardcoded secrets like passwords, api keys, and tokens in git repos. |
-| **Secrets Management 🔒**        | **[TruffleHog](https://github.com/trufflesecurity/truffleHog)**: Scans repositories for secrets.                         |
-|                                  | **[HashiCorp Vault](https://github.com/hashicorp/vault)**: Provides secure access and storage for secrets.               |
-|                                  | **[Mozilla SOPS](https://github.com/mozilla/sops)**: Encrypts secrets in YAML and JSON files.                            |
-| **OSS Dependency Management 📦**| **[Snyk](https://github.com/snyk/snyk)**: Identifies and fixes vulnerabilities in dependencies.                          |
-|                                  | **[CycloneDX](https://github.com/CycloneDX)**: Creates software BOMs (Bill of Materials) for tracking dependencies.       |
-| **Supply Chain Security 🔗**     | **[Tekton Chains](https://github.com/tektoncd/chains)**: Provides Kubernetes-native supply chain security.               |
-|                                  | **[SLSA Framework](https://github.com/slsa-framework/slsa)**: Offers standards for supply-chain security.                |
-| **SAST 🛡️**                      | **[Semgrep](https://github.com/returntocorp/semgrep)**: High-quality static analysis.                                    |
-|                                  | **[Bandit](https://github.com/PyCQA/bandit)**: Python-specific security linter.                                          |
-| **DAST 🌐**                      | **[OWASP ZAP](https://github.com/zaproxy/zaproxy)**: Dynamic scanner for web vulnerabilities.                           |
-|                                  | **[Nuclei](https://github.com/projectdiscovery/nuclei)**: Template-based vulnerability scanning.                         |
-| **Continuous Deployment 🚀**     | **[Trivy](https://github.com/aquasecurity/trivy)**: Scans containers and configurations for vulnerabilities.            |
-|                                  | **[Terrascan](https://github.com/accurics/terrascan)**: Static analysis for Infrastructure as Code.                     |
-|                                  | **[StackStorm](https://github.com/StackStorm/st2)**: Automation platform for DevSecOps workflows.                        |
-| **Kubernetes Security 🌀**       | **[Kubescape](https://github.com/armosec/kubescape)**: Kubernetes compliance and hardening scanner.                      |
-|                                  | **[Kube-Bench](https://github.com/aquasecurity/kube-bench)**: Benchmarks Kubernetes clusters against CIS standards.       |
-| **IaC Security 🏗️**              | **[Checkov](https://github.com/bridgecrewio/checkov)**: Finds misconfigurations in IaC templates.                        |
-|                                  | **[KICS](https://github.com/Checkmarx/kics)**: Scans IaC files for vulnerabilities.                                      |
-| **Vulnerability Management**    | **[DefectDojo](https://github.com/DefectDojo/django-DefectDojo)**: Platform for centralized vulnerability management.     |
-|                                 | **[ArcherySec](https://github.com/archerysec/archerysec)**: ASOC, ASPM, DevSecOps, Vulnerability Management Using ArcherySec.|
+| Category                         | Tool Name & Description                                                                                                   | GitHub Stars |
+|----------------------------------|--------------------------------------------------------------------------------------------------------------------------|--------------|
+| **Pre-Commit Time Tools ⚡**     | **[Git-Secrets](https://github.com/awslabs/git-secrets)**: Detects secrets in commits.                                    | ![GitHub stars](https://img.shields.io/github/stars/awslabs/git-secrets?style=social) |
+|                                  | **[SonarLint](https://github.com/SonarSource/sonarlint-core)**: IDE-based tool for real-time code quality checks.        | ![GitHub stars](https://img.shields.io/github/stars/SonarSource/sonarlint-core?style=social) |
+|                                  | **[ThreatSpec](https://github.com/threatspec/threatspec)**: Threat modeling as code for early risk identification.        | ![GitHub stars](https://img.shields.io/github/stars/threatspec/threatspec?style=social) |
+|                                  | **[Gitleaks](https://github.com/gitleaks/gitleaks)**: Detect and prevent hardcoded secrets like passwords, api keys, and tokens in git repos. | ![GitHub stars](https://img.shields.io/github/stars/gitleaks/gitleaks?style=social) |
+|                                  | **[pre-commit](https://github.com/pre-commit/pre-commit)**: Framework for managing and maintaining git pre-commit hooks. | ![GitHub stars](https://img.shields.io/github/stars/pre-commit/pre-commit?style=social) |
+| **Secrets Management 🔒**        | **[TruffleHog](https://github.com/trufflesecurity/truffleHog)**: Scans repositories for secrets.                         | ![GitHub stars](https://img.shields.io/github/stars/trufflesecurity/truffleHog?style=social) |
+|                                  | **[HashiCorp Vault](https://github.com/hashicorp/vault)**: Provides secure access and storage for secrets.               | ![GitHub stars](https://img.shields.io/github/stars/hashicorp/vault?style=social) |
+|                                  | **[Mozilla SOPS](https://github.com/mozilla/sops)**: Encrypts secrets in YAML and JSON files.                            | ![GitHub stars](https://img.shields.io/github/stars/mozilla/sops?style=social) |
+|                                  | **[AWS Secrets Manager](https://github.com/aws/aws-secrets-manager)**: Securely store and manage secrets in AWS.         | ![GitHub stars](https://img.shields.io/github/stars/aws/aws-secrets-manager?style=social) |
+|                                  | **[Sealed Secrets](https://github.com/bitnami-labs/sealed-secrets)**: Kubernetes controller for one-way encrypted secrets. | ![GitHub stars](https://img.shields.io/github/stars/bitnami-labs/sealed-secrets?style=social) |
+| **OSS Dependency Management 📦**| **[Snyk](https://github.com/snyk/snyk)**: Identifies and fixes vulnerabilities in dependencies.                          | ![GitHub stars](https://img.shields.io/github/stars/snyk/snyk?style=social) |
+|                                  | **[CycloneDX](https://github.com/CycloneDX)**: Creates software BOMs (Bill of Materials) for tracking dependencies.       | ![GitHub stars](https://img.shields.io/github/stars/CycloneDX/cyclonedx-core-java?style=social) |
+|                                  | **[Dependabot](https://github.com/dependabot/dependabot-core)**: Automated dependency updates and security alerts.       | ![GitHub stars](https://img.shields.io/github/stars/dependabot/dependabot-core?style=social) |
+|                                  | **[Renovate](https://github.com/renovatebot/renovate)**: Automated dependency updates with flexible configuration.       | ![GitHub stars](https://img.shields.io/github/stars/renovatebot/renovate?style=social) |
+| **Supply Chain Security 🔗**     | **[Tekton Chains](https://github.com/tektoncd/chains)**: Provides Kubernetes-native supply chain security.               | ![GitHub stars](https://img.shields.io/github/stars/tektoncd/chains?style=social) |
+|                                  | **[SLSA Framework](https://github.com/slsa-framework/slsa)**: Offers standards for supply-chain security.                | ![GitHub stars](https://img.shields.io/github/stars/slsa-framework/slsa?style=social) |
+|                                  | **[Sigstore](https://github.com/sigstore/sigstore)**: Tools for signing, verifying and protecting software.             | ![GitHub stars](https://img.shields.io/github/stars/sigstore/sigstore?style=social) |
+|                                  | **[in-toto](https://github.com/in-toto/in-toto)**: Framework to secure the integrity of software supply chains.         | ![GitHub stars](https://img.shields.io/github/stars/in-toto/in-toto?style=social) |
+| **SAST 🛡️**                      | **[Semgrep](https://github.com/returntocorp/semgrep)**: High-quality static analysis.                                    | ![GitHub stars](https://img.shields.io/github/stars/returntocorp/semgrep?style=social) |
+|                                  | **[Bandit](https://github.com/PyCQA/bandit)**: Python-specific security linter.                                          | ![GitHub stars](https://img.shields.io/github/stars/PyCQA/bandit?style=social) |
+|                                  | **[SonarQube](https://github.com/SonarSource/sonarqube)**: Continuous code quality and security analysis.               | ![GitHub stars](https://img.shields.io/github/stars/SonarSource/sonarqube?style=social) |
+|                                  | **[CodeQL](https://github.com/github/codeql)**: Semantic code analysis engine for security vulnerabilities.              | ![GitHub stars](https://img.shields.io/github/stars/github/codeql?style=social) |
+| **DAST 🌐**                      | **[OWASP ZAP](https://github.com/zaproxy/zaproxy)**: Dynamic scanner for web vulnerabilities.                           | ![GitHub stars](https://img.shields.io/github/stars/zaproxy/zaproxy?style=social) |
+|                                  | **[Nuclei](https://github.com/projectdiscovery/nuclei)**: Template-based vulnerability scanning.                         | ![GitHub stars](https://img.shields.io/github/stars/projectdiscovery/nuclei?style=social) |
+|                                  | **[Burp Suite](https://portswigger.net/burp)**: Web application security testing platform.                              | - |
+|                                  | **[Acunetix](https://www.acunetix.com/)**: Automated web vulnerability scanner.                                         | - |
+| **Continuous Deployment 🚀**     | **[Trivy](https://github.com/aquasecurity/trivy)**: Scans containers and configurations for vulnerabilities.            | ![GitHub stars](https://img.shields.io/github/stars/aquasecurity/trivy?style=social) |
+|                                  | **[Terrascan](https://github.com/accurics/terrascan)**: Static analysis for Infrastructure as Code.                     | ![GitHub stars](https://img.shields.io/github/stars/accurics/terrascan?style=social) |
+|                                  | **[StackStorm](https://github.com/StackStorm/st2)**: Automation platform for DevSecOps workflows.                        | ![GitHub stars](https://img.shields.io/github/stars/StackStorm/st2?style=social) |
+|                                  | **[Anchore](https://github.com/anchore/anchore-engine)**: Container image scanning and policy enforcement.              | ![GitHub stars](https://img.shields.io/github/stars/anchore/anchore-engine?style=social) |
+|                                  | **[Clair](https://github.com/quay/clair)**: Vulnerability static analysis for containers.                               | ![GitHub stars](https://img.shields.io/github/stars/quay/clair?style=social) |
+| **Kubernetes Security 🌀**       | **[Kubescape](https://github.com/armosec/kubescape)**: Kubernetes compliance and hardening scanner.                      | ![GitHub stars](https://img.shields.io/github/stars/armosec/kubescape?style=social) |
+|                                  | **[Kube-Bench](https://github.com/aquasecurity/kube-bench)**: Benchmarks Kubernetes clusters against CIS standards.       | ![GitHub stars](https://img.shields.io/github/stars/aquasecurity/kube-bench?style=social) |
+|                                  | **[Falco](https://github.com/falcosecurity/falco)**: Cloud-native runtime security project.                             | ![GitHub stars](https://img.shields.io/github/stars/falcosecurity/falco?style=social) |
+|                                  | **[Kyverno](https://github.com/kyverno/kyverno)**: Kubernetes native policy management.                                 | ![GitHub stars](https://img.shields.io/github/stars/kyverno/kyverno?style=social) |
+| **IaC Security 🏗️**              | **[Checkov](https://github.com/bridgecrewio/checkov)**: Finds misconfigurations in IaC templates.                        | ![GitHub stars](https://img.shields.io/github/stars/bridgecrewio/checkov?style=social) |
+|                                  | **[KICS](https://github.com/Checkmarx/kics)**: Scans IaC files for vulnerabilities.                                      | ![GitHub stars](https://img.shields.io/github/stars/Checkmarx/kics?style=social) |
+|                                  | **[tfsec](https://github.com/aquasecurity/tfsec)**: Security scanner for Terraform code.                                | ![GitHub stars](https://img.shields.io/github/stars/aquasecurity/tfsec?style=social) |
+|                                  | **[Snyk IaC](https://github.com/snyk/snyk)**: Infrastructure as Code security scanning.                                 | ![GitHub stars](https://img.shields.io/github/stars/snyk/snyk?style=social) |
+| **Vulnerability Management**    | **[DefectDojo](https://github.com/DefectDojo/django-DefectDojo)**: Platform for centralized vulnerability management.     | ![GitHub stars](https://img.shields.io/github/stars/DefectDojo/django-DefectDojo?style=social) |
+|                                 | **[ArcherySec](https://github.com/archerysec/archerysec)**: ASOC, ASPM, DevSecOps, Vulnerability Management Using ArcherySec.| ![GitHub stars](https://img.shields.io/github/stars/archerysec/archerysec?style=social) |
+|                                 | **[VulnWhisperer](https://github.com/HASecuritySolutions/VulnWhisperer)**: Vulnerability management dashboard.           | ![GitHub stars](https://img.shields.io/github/stars/HASecuritySolutions/VulnWhisperer?style=social) |
+|                                 | **[VulnIQ](https://github.com/vulniq/vulniq)**: Vulnerability intelligence and management platform.                      | ![GitHub stars](https://img.shields.io/github/stars/vulniq/vulniq?style=social) |
 
 ---
 
