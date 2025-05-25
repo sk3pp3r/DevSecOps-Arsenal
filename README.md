@@ -25,6 +25,7 @@ For interactive interface [click here](https://www.mymap.ai/share/security-pract
 - [RedHat DevSecOps](https://www.redhat.com/en/topics/devops/what-is-devsecops)
 - [IBM DevSecOps](https://www.ibm.com/cloud/learn/devsecops)
 - [Standard DevSecOps Platform Framework](https://tech.gsa.gov/guides/dev_sec_ops_guide/)
+- [OWASP DevSecOps Guideline](https://owasp.org/www-project-devsecops-guideline/) - Comprehensive guidelines for implementing secure pipelines and promoting shift-left security culture in development processes.
 
 ---
 
