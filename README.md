@@ -81,6 +81,7 @@ This article focuses on enabling organizations to implement Shift-Left principle
 | **Pre-Commit Time Tools ⚡**     | **[Git-Secrets](https://github.com/awslabs/git-secrets)**: Detects secrets in commits.                                    |
 |                                  | **[SonarLint](https://github.com/SonarSource/sonarlint-core)**: IDE-based tool for real-time code quality checks.        |
 |                                  | **[ThreatSpec](https://github.com/threatspec/threatspec)**: Threat modeling as code for early risk identification.        |
+|                                  | **[Gitleaks](https://github.com/gitleaks/gitleaks)**: Detect and prevent hardcoded secrets like passwords, api keys, and tokens in git repos. |
 | **Secrets Management 🔒**        | **[TruffleHog](https://github.com/trufflesecurity/truffleHog)**: Scans repositories for secrets.                         |
 |                                  | **[HashiCorp Vault](https://github.com/hashicorp/vault)**: Provides secure access and storage for secrets.               |
 |                                  | **[Mozilla SOPS](https://github.com/mozilla/sops)**: Encrypts secrets in YAML and JSON files.                            |
@@ -127,4 +128,4 @@ This article focuses on enabling organizations to implement Shift-Left principle
 
 ---
 
-🌟 *Let’s build a safer DevSecOps ecosystem together!* 🌟
+🌟 *Let's build a safer DevSecOps ecosystem together!* 🌟
