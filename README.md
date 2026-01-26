@@ -122,6 +122,7 @@ This article focuses on enabling organizations to implement Shift-Left principle
 |                                 | **[ArcherySec](https://github.com/archerysec/archerysec)**: ASOC, ASPM, DevSecOps, Vulnerability Management Using ArcherySec.| ![GitHub stars](https://img.shields.io/github/stars/archerysec/archerysec?style=social) |
 |                                 | **[VulnWhisperer](https://github.com/HASecuritySolutions/VulnWhisperer)**: Vulnerability management dashboard.           | ![GitHub stars](https://img.shields.io/github/stars/HASecuritySolutions/VulnWhisperer?style=social) |
 |                                 | **[VulnIQ](https://github.com/vulniq/vulniq)**: Vulnerability intelligence and management platform.                      | ![GitHub stars](https://img.shields.io/github/stars/vulniq/vulniq?style=social) |
+| **[Prowler](https://github.com/prowler-cloud/prowler)** | Open-source CSPM that automates security and compliance across any cloud environment. | ![GitHub stars](https://img.shields.io/github/stars/prowler-cloud/prowler?style=social) |
 
 ---
 
